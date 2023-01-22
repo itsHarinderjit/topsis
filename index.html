@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topsis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="font-size: 1.1em;">
+<div class="container">
+    <div class="row"  style="margin-top: 10px;">
+        <div class="col-1 col-lg-3"></div>
+        <h1 class="col-10 col-lg-6 text-center" style="font-size: 3.2em; font-family: Arial, Helvetica, sans-serif;">Topsis</h1>
+        <div class="col-1 col-lg-3"></div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-12">
+            <a href="https://en.wikipedia.org/wiki/TOPSIS">Topsis</a>
+            is a method used for solving Multiple Criteria Decision Making(MCDM) problems.which was originally developed by Ching-Lai Hwang and Yoon in 1981 with further developments by Yoon in 1987,and Hwang, Lai and Liu in 1993.TOPSIS is based on the concept that the chosen alternative should have the shortest geometric distance from the positive ideal solution (PIS) and the longest geometric distance from the negative ideal solution (NIS)
+        </div>
+        <div class="col-12" style="margin-top: 20px;">
+            <h3>How to use</h3>
+            <p>
+                Upload csv file, then enter the weights vector with vector values separated by commas, then enter the impacts vector with comma separated signs (+,-), followed by your email address. Answer will be mailed on your email.
+            </p>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-1 col-lg-3"></div>
+        <div class="col-10 col-lg-6" style="border: solid; border-color: gray; border-width: 1px;">
+            <form style="padding: 10px;" action="/" method="post" enctype="multipart/form-data">
+                <div class="form-group row" style="margin: 5px;">
+                    <label for="inputFile" class="col-4 col-form-label">File Name</label>
+                    <div class="col-8">
+                        <input type="file" accept=".csv" class="form-control-file" id="inputFile" name="file">
+                      </div>
+                </div>
+                <div class="form-group row" style="margin: 5px;">
+                    <label for="inputWeights" class="col-4 col-form-label">Weights</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="inputWeights" name="weight">
+                    </div>
+                </div>
+                <div class="form-group row" style="margin: 5px;">
+                    <label for="inputImpacts" class="col-4 col-from-label">Impacts</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="inputImpacts" name="impact">
+                    </div>
+                </div>
+                <div class="form-group row" style="margin: 5px;">
+                    <label for="inputEmail" class="col-4 col-form-label">Email ID</label>
+                    <div class="col-8">
+                        <input type="email" class="form-control" id="inputEmail" name="email">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning" id="subBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-1 col-lg-3"></div>
+    </div>
+</div>
+<!-- <script src="public/file.js"></script> -->
+</body>
+</html>
